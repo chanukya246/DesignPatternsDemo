@@ -1,8 +1,6 @@
 package com.java.dp;
 
-import com.java.dp.creational.Builder;
-import com.java.dp.creational.Singleton;
-import com.java.dp.creational.Student;
+import com.java.dp.creational.singleton.Singleton;
 
 public class Main {
 
@@ -12,11 +10,6 @@ public class Main {
         Singleton s2 = Singleton.getInstance();
         Singleton s3 = Singleton.getInstance();
 
-        Builder builder = new Builder();
-        builder.setAge(22);
-        builder.setExpInYears(6);
-        builder.setName("Iraa");
-        builder.setOrganization("JPMC");
-        Student st1 = new Student(builder);
+
     }
 }

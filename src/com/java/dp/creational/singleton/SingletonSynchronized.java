@@ -1,4 +1,4 @@
-package com.java.dp.creational;
+package com.java.dp.creational.singleton;
 
 public class SingletonSynchronized {
     private static SingletonSynchronized singleton;

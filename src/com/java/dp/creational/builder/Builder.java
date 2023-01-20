@@ -1,4 +1,4 @@
-package com.java.dp.creational;
+package com.java.dp.creational.builder;
 
 public class Builder {
 
@@ -6,6 +6,25 @@ public class Builder {
     private int age;
     private int expInYears;
     private String organization;
+
+    public Builder(String name, int age, int expInYears, String organization) {
+        this.name = name;
+        this.organization = organization;
+    }
+
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
+    public Student build() throws Exception {
+        if (age < 18)
+            throw new Exception("Age isn't valid");
+        if (expInYears < 5)
+            throw new Exception("Not enough Exp.");
+        Student s = new Student(this);
+        return s;
+    }
 
     public String getName() {
         return name;

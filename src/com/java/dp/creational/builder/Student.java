@@ -1,4 +1,4 @@
-package com.java.dp.creational;
+package com.java.dp.creational.builder;
 
 public class Student {
 
@@ -13,4 +13,12 @@ public class Student {
         this.name = helper.getName();
         this.organization = helper.getOrganization();
     }
+
+    public static Student getStudentObj(String name, int age, int expInYears, String organization) {
+        Builder b = new Builder(name, age, expInYears, organization);
+        Student s = new Student(b);
+        return s;
+    }
+
+
 }

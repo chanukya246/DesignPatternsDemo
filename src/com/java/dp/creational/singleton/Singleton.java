@@ -1,4 +1,4 @@
-package com.java.dp.creational;
+package com.java.dp.creational.singleton;
 
 public class Singleton {
     private static Singleton singleton;
